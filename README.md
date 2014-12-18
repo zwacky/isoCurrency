@@ -9,7 +9,7 @@ AngularJS filter that retrieves currency symbols according to ISO 4217 currency 
 
 ## Demo
 
-http://jsfiddle.net/nqf0ye00/
+http://jsfiddle.net/nqf0ye00/1/
 
 ## Usage
 
