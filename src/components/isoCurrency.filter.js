@@ -14,6 +14,8 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 		 * @return string
 		 */
 		return function(amount, currencyCode) {
+            		if (!currencyCode) return;
+            
 			var currency = iso4217.getCurrencyByCode(currencyCode);
 			return $filter('currency')(amount, currency.symbol, currency.fraction);
 		};
