@@ -4,7 +4,7 @@
  * wraps angular's currency filter with an additional layer, in case the currency symbol is not available.
  */
 angular.module('isoCurrency', ['isoCurrency.common'])
-	.filter('isoCurrency', function($filter, iso4217) {
+	.filter('isoCurrency', ['$filter', 'iso4217', function($filter, iso4217) {
 
 		/**
 		 * transforms an amount into the right format and currency according to a passed currency code (3 chars).
@@ -20,4 +20,4 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 			return $filter('currency')(amount, currency.symbol, currency.fraction);
 		};
 
-	});
+	}]);
