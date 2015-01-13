@@ -863,17 +863,20 @@ angular.module('isoCurrency.common', [])
 			 * @return object
 			 */
 			getCurrencyByCode: function(code) {
+				if (!code) return;
+
 				return currencies[code.toUpperCase()];
 			}
 		};
 	});
+
 'use strict';
 
 /**
  * wraps angular's currency filter with an additional layer, in case the currency symbol is not available.
  */
 angular.module('isoCurrency', ['isoCurrency.common'])
-	.filter('isoCurrency', function($filter, iso4217) {
+	.filter('isoCurrency', ['$filter', 'iso4217', function($filter, iso4217) {
 
 		/**
 		 * transforms an amount into the right format and currency according to a passed currency code (3 chars).
@@ -883,8 +886,10 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 		 * @return string
 		 */
 		return function(amount, currencyCode) {
+            		if (!currencyCode) return;
+            
 			var currency = iso4217.getCurrencyByCode(currencyCode);
 			return $filter('currency')(amount, currency.symbol, currency.fraction);
 		};
 
-	});
+	}]);
