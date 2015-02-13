@@ -14,7 +14,8 @@ http://jsfiddle.net/nqf0ye00/1/
 ## Usage
 
 Instead of directly using the currency symbol, you only need the 3 char long currency code (e.g. USD or JPY).
-It will take the right symbol, format and fraction size.
+It will take the right symbol, format and fraction size. The latter can be overridden by providing
+an explicity fraction size value after the currency field (see below).
 
 ```javascript
 // in controller
@@ -23,4 +24,5 @@ $scope.currency = 'USD';
 
 // in template
 {{ amount | isoCurrency:currency }} // $50.50
+{{ amount | isoCurrency:currency:0 }} // $50
 ```
