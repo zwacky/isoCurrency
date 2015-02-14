@@ -8,16 +8,17 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 
 		/**
 		 * transforms an amount into the right format and currency according to a passed currency code (3 chars).
-		 * 
+		 *
 		 * @param float amount
 		 * @param string currencyCode e.g. EUR, USD
+		 * @param number fraction User specified fraction size that overwrites default value
 		 * @return string
 		 */
-		return function(amount, currencyCode) {
-            		if (!currencyCode) return;
-            
+		return function(amount, currencyCode, fraction) {
+      if (!currencyCode) return;
 			var currency = iso4217.getCurrencyByCode(currencyCode);
-			return $filter('currency')(amount, currency.symbol, currency.fraction);
+      var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
+			return $filter('currency')(amount, currency.symbol, fractionSize);
 		};
 
 	}]);
