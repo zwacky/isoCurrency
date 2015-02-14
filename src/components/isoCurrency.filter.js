@@ -15,9 +15,11 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 		 * @return string
 		 */
 		return function(amount, currencyCode, fraction) {
-      if (!currencyCode) return;
+			if (!currencyCode) {
+				return;
+			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
-      var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
+			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
 			return $filter('currency')(amount, currency.symbol, fractionSize);
 		};
 
