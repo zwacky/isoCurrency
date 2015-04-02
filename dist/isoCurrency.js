@@ -891,6 +891,10 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 				return;
 			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
+			if (!currency) {
+				console.error('Currency code does not exist: ', currencyCode);
+				return amount;			
+			}
 			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
 			return $filter('currency')(amount, currency.symbol, fractionSize);
 		};
