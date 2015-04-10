@@ -28,7 +28,7 @@ gulp.task('js', function() {
 	gulp.src(paths.js)
 		.pipe(concat('isoCurrency.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest(paths.dist.js));
+		.pipe(gulp.dest(paths.dist.js));	
 
 	gulp.src(paths.js)
 		.pipe(concat('isoCurrency.js'))
