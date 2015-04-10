@@ -3,7 +3,7 @@
   "description": "An extendend verison of isoCurrency for AngularJS filter that retrieves currency symbols according to ISO 4217 currency codes. Includes iso code to currency filter",
   "license": "MIT",
   "main": "dist/isoCurrency.js",
-  "version" : "1.0.0",
+  "version" : "1.0.1",
   "keywords": [
     "angular",
     "currency",
