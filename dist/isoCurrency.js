@@ -780,7 +780,7 @@ angular.module('isoCurrency.common', [])
 			'TRY': {
 				text: 'Turkish Lira',
 				fraction: 2,
-				symbol: ''
+				symbol: '₺'
 			},
 			'TMT': {
 				text: 'Turkmenistan New Manat',
