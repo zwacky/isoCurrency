@@ -75,7 +75,7 @@ angular.module('isoCurrency.common', [])
 			'BHD': {
 				text: 'Bahraini Dinar',
 				fraction: 3,
-				symbol: 'د'
+				symbol: 'BD'
 			},
 			'BDT': {
 				text: 'Taka',
