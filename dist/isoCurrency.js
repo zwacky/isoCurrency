@@ -5,7 +5,7 @@
  */
 angular.module('isoCurrency.common', [])
 	.factory('iso4217', function() {
-	
+
 		var currencies = {
 			'AFN': {
 				text: 'Afghani',
@@ -75,12 +75,12 @@ angular.module('isoCurrency.common', [])
 			'BHD': {
 				text: 'Bahraini Dinar',
 				fraction: 3,
-				symbol: false
+				symbol: 'BD'
 			},
 			'BDT': {
 				text: 'Taka',
 				fraction: 2,
-				symbol: false
+				symbol: '৳'
 			},
 			'BBD': {
 				text: 'Barbados Dollar',
@@ -115,7 +115,7 @@ angular.module('isoCurrency.common', [])
 			'INR': {
 				text: 'Indian Rupee',
 				fraction: 2,
-				symbol: ''
+				symbol: '₹'
 			},
 			'BOB': {
 				text: 'Boliviano',
@@ -125,7 +125,7 @@ angular.module('isoCurrency.common', [])
 			'BOV': {
 				text: 'Mvdol',
 				fraction: 2,
-				symbol: false
+				symbol: '$b'
 			},
 			'BAM': {
 				text: 'Convertible Mark',
