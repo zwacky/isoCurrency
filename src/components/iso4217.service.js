@@ -25,7 +25,7 @@ angular.module('isoCurrency.common', [])
 			'DZD': {
 				text: 'Algerian Dinar',
 				fraction: 2,
-				symbol: false
+				symbol: 'د.ج'
 			},
 			'USD': {
 				text: 'US Dollar',
@@ -35,7 +35,7 @@ angular.module('isoCurrency.common', [])
 			'AOA': {
 				text: 'Kwanza',
 				fraction: 2,
-				symbol: false
+				symbol: 'Kz'
 			},
 			'XCD': {
 				text: 'East Caribbean Dollar',
@@ -110,7 +110,7 @@ angular.module('isoCurrency.common', [])
 			'BTN': {
 				text: 'Ngultrum',
 				fraction: 2,
-				symbol: false
+				symbol: 'Nu'
 			},
 			'INR': {
 				text: 'Indian Rupee',
@@ -160,7 +160,7 @@ angular.module('isoCurrency.common', [])
 			'BIF': {
 				text: 'Burundi Franc',
 				fraction: 0,
-				symbol: false
+				symbol: 'BIF'
 			},
 			'KHR': {
 				text: 'Riel',
@@ -180,7 +180,7 @@ angular.module('isoCurrency.common', [])
 			'CVE': {
 				text: 'Cabo Verde Escudo',
 				fraction: 2,
-				symbol: false
+				symbol: '$'
 			},
 			'KYD': {
 				text: 'Cayman Islands Dollar',
@@ -600,7 +600,7 @@ angular.module('isoCurrency.common', [])
 			'PGK': {
 				text: 'Kina',
 				fraction: 2,
-				symbol: false
+				symbol: 'K'
 			},
 			'PYG': {
 				text: 'Guarani',
@@ -640,7 +640,7 @@ angular.module('isoCurrency.common', [])
 			'RWF': {
 				text: 'Rwand Franc',
 				fraction: 0,
-				symbol: false
+				symbol: 'R₣'
 			},
 			'SHP': {
 				text: 'Saint Helen Pound',
@@ -650,7 +650,7 @@ angular.module('isoCurrency.common', [])
 			'WST': {
 				text: 'Tala',
 				fraction: 2,
-				symbol: false
+				symbol: '$'
 			},
 			'STD': {
 				text: 'Dobra',
@@ -675,7 +675,7 @@ angular.module('isoCurrency.common', [])
 			'SLL': {
 				text: 'Leone',
 				fraction: 2,
-				symbol: false
+				symbol: 'Le'
 			},
 			'SGD': {
 				text: 'Singapore Dollar',
