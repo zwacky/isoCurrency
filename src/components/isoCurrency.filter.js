@@ -20,6 +20,13 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
 			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
+
+			// Angular polyfill for angular version <= 1.2 ( before fractionSize support )
+			if(angular.version.major <= 1 && angular.version.minor <= 2) {
+				var number = $filter('number')(amount, fractionSize);
+				return currency.symbol + number;
+			}
+
 			return $filter('currency')(amount, currency.symbol, fractionSize);
 		};
 
