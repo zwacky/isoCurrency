@@ -26,3 +26,7 @@ $scope.currency = 'USD';
 {{ amount | isoCurrency:currency }} // $50.50
 {{ amount | isoCurrency:currency:0 }} // $50
 ```
+
+## Currency reference
+
+Mainly taken from the list of https://en.wikipedia.org/wiki/ISO_4217. If something is missing, feel free to create a PR.
