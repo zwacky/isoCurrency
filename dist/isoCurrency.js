@@ -863,7 +863,7 @@ angular.module('isoCurrency.common', [])
 			 * @return object
 			 */
 			getCurrencyByCode: function(code) {
-				if (!code) return;
+				if (!code || typeof code !== 'string') return;
 
 				return currencies[code.toUpperCase()];
 			}
@@ -887,10 +887,12 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 		 * @return string
 		 */
 		return function(amount, currencyCode, fraction) {
-			if (!currencyCode) {
-				return;
-			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
+
+			if (!currency) {
+				return amount;
+			}
+
 			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
 			return $filter('currency')(amount, currency.symbol || (currencyCode + ' '), fractionSize);
 		};
