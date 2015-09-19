@@ -863,7 +863,7 @@ angular.module('isoCurrency.common', [])
 			 * @return object
 			 */
 			getCurrencyByCode: function(code) {
-				if (!code) return;
+				if (!code || typeof code !== 'string') return;
 
 				return currencies[code.toUpperCase()];
 			}
