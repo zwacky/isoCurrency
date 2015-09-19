@@ -1,4 +1,4 @@
-# isoCurrency
+# isoCurrency [![Build Status](https://travis-ci.org/zwacky/isoCurrency.svg?branch=master)](https://travis-ci.org/zwacky/isoCurrency)
 
 AngularJS filter that retrieves currency symbols according to ISO 4217 currency codes.
 
