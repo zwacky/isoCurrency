@@ -10,7 +10,7 @@ var ngAnnotate = require('gulp-ng-annotate');
 
 
 var paths = {
-	js: ['./src/**/*.js'],
+	js: ['./src/**/!(*.spec).js'],
 	dist: {
 		js: './dist/'
 	}
