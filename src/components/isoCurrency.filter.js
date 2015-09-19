@@ -20,7 +20,7 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
 			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
-			return $filter('currency')(amount, currency.symbol, fractionSize);
+			return $filter('currency')(amount, currency.symbol || (currencyCode + ' '), fractionSize);
 		};
 
 	}]);
