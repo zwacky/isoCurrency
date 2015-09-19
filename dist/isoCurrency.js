@@ -100,7 +100,7 @@ angular.module('isoCurrency.common', [])
 			'XOF': {
 				text: 'CF Franc BCEAO',
 				fraction: 0,
-				symbol: false
+				symbol: 'CFA'
 			},
 			'BMD': {
 				text: 'Bermudian Dollar',
@@ -850,7 +850,7 @@ angular.module('isoCurrency.common', [])
 			'ZWL': {
 				text: 'Zimbabwe Dollar',
 				fraction: 2,
-				symbol: false
+				symbol: '$'
 			}
 		};
 
@@ -858,7 +858,7 @@ angular.module('isoCurrency.common', [])
 
 			/**
 			 * retrieves the object holding currency, code and fraction information about a currency.
-			 * 
+			 *
 			 * @param string code
 			 * @return object
 			 */
@@ -892,7 +892,7 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 			}
 			var currency = iso4217.getCurrencyByCode(currencyCode);
 			var fractionSize = (fraction === void 0) ? currency.fraction : fraction;
-			return $filter('currency')(amount, currency.symbol, fractionSize);
+			return $filter('currency')(amount, currency.symbol || (currencyCode + ' '), fractionSize);
 		};
 
 	}]);
