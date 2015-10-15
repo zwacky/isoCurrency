@@ -415,7 +415,7 @@ angular.module('isoCurrency.common', [])
 			'KZT': {
 				text: 'Tenge',
 				fraction: 2,
-				symbol: 'лв'
+				symbol: '₸'
 			},
 			'KES': {
 				text: 'Kenyan Shilling',
@@ -440,7 +440,7 @@ angular.module('isoCurrency.common', [])
 			'KGS': {
 				text: 'Som',
 				fraction: 2,
-				symbol: 'лв'
+				symbol: 'som'
 			},
 			'LAK': {
 				text: 'Kip',
@@ -820,7 +820,7 @@ angular.module('isoCurrency.common', [])
 			'UZS': {
 				text: 'Uzbekistan Sum',
 				fraction: 2,
-				symbol: 'лв'
+				symbol: 'som'
 			},
 			'VUV': {
 				text: 'Vatu',
