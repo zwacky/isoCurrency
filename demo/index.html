@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../bower_components/angular/angular.min.js" language="javascript" type="text/javascript"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js" language="javascript" type="text/javascript"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+    
+    <script src="demo.js" language="javascript" type="text/javascript"></script>
+    <script src="../dist/isoCurrency.js" language="javascript" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div ng-app="example">
+        <div ng-controller="AppCtrl">
+            <div class="container">
+                <h1>iso-currency <small>examples</small></h1>
+                <div class="form-group">
+                    <label for="amount">Currency amount</label>
+                    <input type="text" class="form-control" id="amount" placeholder="Enter amount" ng-model="amount" />
+                </div>
+            </div>
+            <div class="container" ng-repeat="currency in currencies">
+                <div class="col-xs-2">{{ currency }}:</div>
+                <div class="col-xs-10">{{ amount | isoCurrency:currency }}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
