@@ -4,5 +4,5 @@ angular.module('example', [
 
 .controller('AppCtrl', function($scope) {
     $scope.amount = 15.23;
-    $scope.currencies = ['EUR', 'USD', 'JPY', 'OMR', 'GMD'];
+    $scope.currencies = ['EUR', 'USD', 'JPY', 'OMR', 'GMD', 'BGN'];
 });
