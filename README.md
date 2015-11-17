@@ -4,7 +4,8 @@ AngularJS filter that retrieves currency symbols according to ISO 4217 currency 
 
 ## Installation
 
-- `bower install iso-currency`
+- `npm install iso-currency`
+- or `bower install iso-currency`
 - add `'isoCurrency'` to your angular.module dependency, usually in app.js
 
 ## Demo
