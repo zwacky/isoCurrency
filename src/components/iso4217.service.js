@@ -155,7 +155,8 @@ angular.module('isoCurrency.common', [])
 			'BGN': {
 				text: 'Bulgarian Lev',
 				fraction: 2,
-				symbol: 'лв'
+				symbol: ' лв',
+				suffix: true
 			},
 			'BIF': {
 				text: 'Burundi Franc',
@@ -635,7 +636,8 @@ angular.module('isoCurrency.common', [])
 			'RUB': {
 				text: 'Russian Ruble',
 				fraction: 2,
-				symbol: 'руб'
+				symbol: ' руб',
+				suffix: true
 			},
 			'RWF': {
 				text: 'Rwand Franc',
@@ -665,7 +667,8 @@ angular.module('isoCurrency.common', [])
 			'RSD': {
 				text: 'Serbian Dinar',
 				fraction: 2,
-				symbol: 'Дин.'
+				symbol: ' Дин.',
+				suffix: true
 			},
 			'SCR': {
 				text: 'Seychelles Rupee',
