@@ -47,5 +47,5 @@ describe('the filtering of isoCurrency', function() {
             expect($filter('isoCurrency')(amount, item))
                 .toBe(amount);
         });
-    })
+    });
 });
