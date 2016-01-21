@@ -888,10 +888,6 @@ angular.module('isoCurrency', ['isoCurrency.common'])
         numberFilter = $filter('number');
         formats.DEFAULT_PRECISION = angular.isUndefined(formats.DEFAULT_PRECISION) ? 2 : formats.DEFAULT_PRECISION;
 
-        function addSuffix(formattedNumber, currencySymbol) {
-            $locale.NUMBER_FORMATS.PATTERNS[1]
-        }
-
         function formatCurrency(amount, currencySymbol, fractionSize, suffix) {
             var isNegative, formattedNumber,
                 parts = [];
@@ -906,7 +902,7 @@ angular.module('isoCurrency', ['isoCurrency.common'])
 
             return parts.join('').replace(/\u00A4/g, '');
         }
-        
+
         /**
          * transforms an amount into the right format and currency according to a passed currency code (3 chars).
          *

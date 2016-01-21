@@ -9,6 +9,7 @@
   "devDependencies": {
     "angular": "^1.4.6",
     "angular-mocks": "^1.4.6",
+    "bootstrap": "^3.3.6",
     "gulp": "~3.6.1",
     "gulp-concat": "~2.2.0",
     "gulp-less": "~1.2.3",
@@ -17,12 +18,14 @@
     "gulp-uglify": "~0.2.1",
     "multipipe": "0.0.2",
     "rimraf": "~2.2.6",
+    "superstatic": "^4.0.1",
     "testem": "^0.9.5"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
+    "start": "superstatic -p 3000 demo",
     "test": "testem ci"
   }
 }
