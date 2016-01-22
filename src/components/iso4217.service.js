@@ -866,6 +866,15 @@ angular.module('isoCurrency.common', [])
 				if (!code || typeof code !== 'string') return;
 
 				return currencies[code.toUpperCase()];
+			},
+
+			/**
+			 * retrives all available currenies.
+			 *
+			 * @return object
+			 */
+			currencies: function() {
+				return currencies;
 			}
 		};
 	});
