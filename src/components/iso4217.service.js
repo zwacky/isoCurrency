@@ -873,7 +873,7 @@ angular.module('isoCurrency.common', [])
 			 *
 			 * @return object
 			 */
-			currencies: function() {
+			getCurrencies: function() {
 				return currencies;
 			}
 		};
