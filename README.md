@@ -28,6 +28,11 @@ $scope.currency = 'USD';
 {{ amount | isoCurrency:currency:0 }} // $50
 ```
 
+## Contribute and test
+
+- `gulp watch` and get started
+- `gulp && testem ci` to start the tests
+
 ## Currency reference
 
 Mainly taken from the list of https://en.wikipedia.org/wiki/ISO_4217. If something is missing, feel free to create a PR.
