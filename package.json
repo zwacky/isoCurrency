@@ -35,6 +35,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "testem ci"
+    "test": "gulp && testem ci"
   }
 }
