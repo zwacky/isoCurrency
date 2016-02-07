@@ -13,12 +13,7 @@
   "authors": [
     {
       "name": "Simon Wicki",
-      "email": "sim.wicki@gmail.com",
-      "homepage": "http://www.wickiweb.de"
+      "email": "sim.wicki@gmail.com"
     }
-  ],
-  "dependencies": {
-    "angular": "^1.2",
-    "bootstrap": "^3.3"
-  }
+  ]
 }

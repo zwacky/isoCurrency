@@ -1,12 +1,10 @@
-'use strict';
-
 /**
  * holds utility services.
  */
 angular.module('isoCurrency.common', [])
-	.factory('iso4217', function() {
+	.factory('iso4217', () => {
 
-		var currencies = {
+		const currencies = {
 			'AFN': {
 				text: 'Afghani',
 				fraction: 2,
@@ -862,8 +860,10 @@ angular.module('isoCurrency.common', [])
 			 * @param string code
 			 * @return object
 			 */
-			getCurrencyByCode: function(code) {
-				if (!code || typeof code !== 'string') return;
+			getCurrencyByCode: (code) => {
+				if (!code || typeof code !== 'string') {
+					return;
+				}
 
 				return currencies[code.toUpperCase()];
 			},
@@ -873,7 +873,7 @@ angular.module('isoCurrency.common', [])
 			 *
 			 * @return object
 			 */
-			getCurrencies: function() {
+			getCurrencies: () => {
 				return currencies;
 			}
 		};
