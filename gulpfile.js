@@ -9,7 +9,7 @@ var history = require('connect-history-api-fallback');
 var paths = {
 	js: ['./src/components/**/*.js', '!./src/components/**/*.spec.js'],
 	dist: {
-		js: './dist/js/',
+		js: './dist',
 	}
 };
 
