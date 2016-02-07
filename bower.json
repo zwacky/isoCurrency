@@ -18,6 +18,7 @@
     }
   ],
   "dependencies": {
-    "angular": "^1.2"
+    "angular": "^1.2",
+    "bootstrap": "^3.3"
   }
 }
