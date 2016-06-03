@@ -62,7 +62,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '$'
 		},
 		'AZN': {
-			text: 'Azerbaijanian Manat',
+			text: 'Azerbaijani Manat',
 			fraction: 2,
 			symbol: 'ман'
 		},
@@ -87,7 +87,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '$'
 		},
 		'BYR': {
-			text: 'Belarussian Ruble',
+			text: 'Belarusian Ruble',
 			fraction: 0,
 			symbol: 'p.'
 		},
@@ -97,7 +97,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: 'BZ$'
 		},
 		'XOF': {
-			text: 'CF Franc BCEAO',
+			text: 'CFA Franc BCEAO',
 			fraction: 0,
 			symbol: 'CFA'
 		},
@@ -157,7 +157,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: 'лв'
 		},
 		'BIF': {
-			text: 'Burundi Franc',
+			text: 'Burundian Franc',
 			fraction: 0,
 			symbol: 'BIF'
 		},
@@ -167,7 +167,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '៛'
 		},
 		'XAF': {
-			text: 'CF Franc BEAC',
+			text: 'CFA Franc BEAC',
 			fraction: 0,
 			symbol: false
 		},
@@ -227,7 +227,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '$'
 		},
 		'CRC': {
-			text: 'Cost Rican Colon',
+			text: 'Costa Rican Colon',
 			fraction: 2,
 			symbol: '₡'
 		},
@@ -337,12 +337,12 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '£'
 		},
 		'GNF': {
-			text: 'Guine Franc',
+			text: 'Guinean Franc',
 			fraction: 0,
 			symbol: false
 		},
 		'GYD': {
-			text: 'Guyan Dollar',
+			text: 'Guyanese Dollar',
 			fraction: 2,
 			symbol: '$'
 		},
@@ -522,7 +522,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: '₨'
 		},
 		'XUA': {
-			text: 'ADB Unit of ccount',
+			text: 'ADB Unit of account',
 			fraction: 0,
 			symbol: false
 		},
@@ -562,7 +562,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: false
 		},
 		'NAD': {
-			text: 'Namibi Dollar',
+			text: 'Namibian Dollar',
 			fraction: 2,
 			symbol: '$'
 		},
@@ -637,12 +637,12 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: 'руб'
 		},
 		'RWF': {
-			text: 'Rwand Franc',
+			text: 'Rwandan Franc',
 			fraction: 0,
 			symbol: 'R₣'
 		},
 		'SHP': {
-			text: 'Saint Helen Pound',
+			text: 'Saint Helena Pound',
 			fraction: 2,
 			symbol: '£'
 		},
@@ -702,7 +702,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: false
 		},
 		'LKR': {
-			text: 'Sri Lank Rupee',
+			text: 'Sri Lankan Rupee',
 			fraction: 2,
 			symbol: '₨'
 		},
@@ -767,7 +767,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: false
 		},
 		'TTD': {
-			text: 'Trinidad nd Tobago Dollar',
+			text: 'Trinidad and Tobago Dollar',
 			fraction: 2,
 			symbol: 'TT$'
 		},
@@ -787,7 +787,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: false
 		},
 		'UGX': {
-			text: 'Ugand Shilling',
+			text: 'Ugandan Shilling',
 			fraction: 0,
 			symbol: false
 		},
