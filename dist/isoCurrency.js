@@ -457,7 +457,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 			symbol: false
 		},
 		'ZAR': {
-			text: 'Rand',
+			text: 'South African Rand',
 			fraction: 2,
 			symbol: 'R'
 		},
