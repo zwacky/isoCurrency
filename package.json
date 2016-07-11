@@ -1,6 +1,6 @@
 {
   "name": "iso-currency",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "AngularJS filter that retrieves currency symbols according to ISO 4217 currency codes.",
   "author": "Simon Wicki <sim.wicki@gmail.com>",
   "repository": "git@github.com:zwacky/isoCurrency.git",
