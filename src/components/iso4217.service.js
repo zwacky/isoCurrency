@@ -608,7 +608,7 @@ angular.module('isoCurrency.common', [])
 			'PEN': {
 				text: 'Nuevo Sol',
 				fraction: 2,
-				symbol: 'S/.'
+				symbol: 'S/'
 			},
 			'PHP': {
 				text: 'Philippine Peso',
