@@ -564,7 +564,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 		'NAD': {
 			text: 'Namibian Dollar',
 			fraction: 2,
-			symbol: '$'
+			symbol: 'N$'
 		},
 		'NPR': {
 			text: 'Nepalese Rupee',
