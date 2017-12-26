@@ -14,7 +14,7 @@
     "browser-sync": "^2.11.1",
     "connect-history-api-fallback": "^1.1.0",
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-concat": "~2.2.0",
     "gulp-jshint": "^2.0.0",
