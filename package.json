@@ -10,7 +10,7 @@
     "angular": "^1.4.6",
     "angular-mocks": "^1.4.6",
     "babel-preset-es2015": "^6.3.13",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "3.4.*",
     "browser-sync": "2.26.3",
     "connect-history-api-fallback": "^1.1.0",
     "del": "^2.2.0",
