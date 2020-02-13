@@ -448,7 +448,7 @@ angular.module('isoCurrency.common', [])
 			'LBP': {
 				text: 'Lebanese Pound',
 				fraction: 2,
-				symbol: '£'
+				symbol: 'ل.ل.'
 			},
 			'LSL': {
 				text: 'Loti',
