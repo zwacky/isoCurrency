@@ -634,7 +634,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 		'RUB': {
 			text: 'Russian Ruble',
 			fraction: 2,
-			symbol: 'руб'
+			symbol: '₽'
 		},
 		'RWF': {
 			text: 'Rwandan Franc',
