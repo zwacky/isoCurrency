@@ -434,7 +434,7 @@ angular.module('isoCurrency.common', []).factory('iso4217', function () {
 		'KWD': {
 			text: 'Kuwaiti Dinar',
 			fraction: 3,
-			symbol: false
+			symbol: 'د.ك'
 		},
 		'KGS': {
 			text: 'Som',
