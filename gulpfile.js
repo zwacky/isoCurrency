@@ -10,10 +10,8 @@ var paths = {
 	js: ['./src/components/**/*.js', '!./src/components/**/*.spec.js'],
 	dist: {
 		js: './dist',
-	}
+	},
 };
-
-
 
 /**
  * removes css- and js-dist folder.
@@ -22,29 +20,33 @@ gulp.task('clean', function() {
 	return del(['./dist']);
 });
 
-gulp.task('js', ['lint'], function() {
-	return gulp.src(paths.js)
-		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.babel({
-			presets: ['es2015']
-		}))
-		.pipe(plugins.ngAnnotate())
-		.pipe(plugins.concat('isoCurrency.js'))
-		.pipe(gulp.dest(paths.dist.js))
-		.pipe(plugins.uglify())
-		.pipe(plugins.concat('isoCurrency.min.js'))
-		.pipe(plugins.sourcemaps.write('.'))
-		.pipe(gulp.dest(paths.dist.js));
-});
-
 gulp.task('lint', function() {
 	return gulp.src(paths.js)
 		.pipe(plugins.jshint())
 		.pipe(plugins.jshint.reporter('jshint-stylish'))
 		.pipe(plugins.jshint.reporter('fail'));
-})
+});
 
-gulp.task('watch', ['build'], function() {
+gulp.task('js-build', function() {
+	return gulp.src(paths.js)
+		.pipe(plugins.sourcemaps.init())
+		.pipe(plugins.babel({
+			presets: ['@babel/preset-env']
+		}))
+		.pipe(plugins.ngAnnotate())
+		.pipe(plugins.concat('isoCurrency.js'))
+		.pipe(gulp.dest('dist/'))
+		.pipe(plugins.uglify())
+		.pipe(plugins.concat('isoCurrency.min.js'))
+		.pipe(plugins.sourcemaps.write('.'))
+		.pipe(gulp.dest('dist/'))
+});
+
+gulp.task('js', gulp.series('lint', 'js-build'));
+
+gulp.task('build', gulp.series('clean', 'js'));
+
+gulp.task('watch', gulp.series('build', function() {
 	gulp.watch(paths.js, ['watch-js']);
 
 	browserSync.init({
@@ -54,7 +56,7 @@ gulp.task('watch', ['build'], function() {
 		},
 		startPath: '/demo/'
 	});
-});
+}));
 
 gulp.task('_browser-reload', function(cb) {
 	browserSync.reload();
@@ -62,28 +64,10 @@ gulp.task('_browser-reload', function(cb) {
 });
 
 gulp.task('watch-js', function(cb) {
-	return runSequence(['js'], ['_browser-reload'], cb);
+	return gulp.watch(['src/**/**.js', ['js']]);
 });
 
-
-gulp.task('build', function() {
-	return runSequence(['clean'], ['js']);
-});
-gulp.task('default', ['build']);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+gulp.task('default', gulp.series('build'));
 
 
 //
