@@ -798,7 +798,7 @@ angular.module('isoCurrency.common', [])
 			'AED': {
 				text: 'UAE Dirham',
 				fraction: 2,
-				symbol: false
+				symbol: 'د.إ'
 			},
 			'USN': {
 				text: 'US Dollar (Next day)',
